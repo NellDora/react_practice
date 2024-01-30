@@ -1,0 +1,32 @@
+리액트 Elements는 자바스크립트 객체 형태로 존재
+ -> 한번 생성되면 변경 할 수 없는 불변
+
+{
+    type:Button,
+    props: {
+        color : 'green',
+        children: 'Hello, element!'
+    }
+}
+
+ React.createElement(
+    type,
+    [props],
+    [...children]
+ )
+
+
+ ----------------------------------------------------------------------------
+ Components와 props
+
+리액트는 Component를 기반으로 동작함
+-> 레고 블록을 조립하듯 컴포넌트들을 모아서 개발
+-> Component 이름은 항상 대문자로 시작해야한다.
+    why? : 소문자로 시작하면 dom 태그로 인식함
+
+Component 렌더링
+
+
+
+props
+:property의 약어로 속성 => Component의 속성

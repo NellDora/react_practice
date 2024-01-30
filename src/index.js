@@ -20,7 +20,7 @@ const root = RD.createRoot(document.getElementById('root'));
 setInterval(() =>{
   root.render(
     <React.StrictMode>
-      <Clock/>
+      <App/>
     </React.StrictMode>,
     document.getElementById('root')
   );
