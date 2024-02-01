@@ -30,3 +30,9 @@ Component 렌더링
 
 props
 :property의 약어로 속성 => Component의 속성
+
+
+
+
+HTML을 한 단어로 줄여서 쓸 수 있는 방법 :
+리액트의 Component 문법
