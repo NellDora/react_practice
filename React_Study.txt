@@ -36,3 +36,11 @@ props
 
 HTML을 한 단어로 줄여서 쓸 수 있는 방법 :
 리액트의 Component 문법
+
+Component 만드는 기준
+    -> 반복적으로 나오는 녀석들을 Component로 만드는 것이 좋다.
+    -> 사이트에서 자주 바뀌는 UI들이 있는데 이런 아이들을 Component로 만들면 좋음. (성능적인 이점)
+    -> 하나의 페이지를 구성할 때 Component를 사용
+
+    단점 :
+        1. state를 쓸 때 복잡해짐

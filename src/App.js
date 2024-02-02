@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
+import CommentList from './chapter_05/CommentList';
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
       </div>
 
       <Modal></Modal>
+      <CommentList/>
       
     </div>
   );
@@ -77,6 +79,37 @@ function Modal(){
         <p>상세내용</p>
       </div>
   )
+}
+
+function Component(props){
+  return(
+    <div className='comment'>
+      <UserInfo user={props.author} />
+      <div className='comment-text'>
+        {props.text}
+      </div>
+    </div>
+  );
+}
+
+function Avatar(props){
+  return (
+    <img className="avatar"
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    />
+  );
+}
+
+function UserInfo(props){
+  return(
+    <div className='user-info'>
+      <Avatar user={props.user}/>
+      <div className='user-info-name'>
+        {props.user.name}
+      </div>
+    </div>
+  );
 }
 
 /* 터미널에 뜨는warning -> eslint가 잡아주는 문법체크사항
