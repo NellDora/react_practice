@@ -1,15 +1,15 @@
 import React from "react";
-import './Comment.css';
 
 
 
-function Comment(props){
+function ProfileDetail(props){
+
+
     return (
         <div className="wrapper">
             <div className="imageContainer">
                 
             </div>
-
             <div className="contentContainer">
                 <span className="nameText">{props.title}</span>
                 <span className="commentText">{props.content}</span>
@@ -19,6 +19,4 @@ function Comment(props){
     );
 }
 
-
-
-export default Comment;
+export default ProfileDetail;

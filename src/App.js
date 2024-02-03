@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
 import CommentList from './chapter_05/CommentList';
+import Profile from './Info/Profile';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   // statue에 데이터에 저장해놓는 이유 : 웹이 App처럼 동작하게 만들고 싶어서
   // state는 변경되면 HTML이 자동으로 재랜더링이 된다.
   let posts = '나만의 블로그';
-
+  let [page,pageChange] = useState(0);
   let [따봉,따봉변경] =useState(0);
   
 
@@ -65,7 +66,8 @@ function App() {
       </div>
 
       <Modal></Modal>
-      <CommentList/>
+
+      <Profile/>
       
     </div>
   );
